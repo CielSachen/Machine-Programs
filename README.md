@@ -9,3 +9,7 @@ The source codes of the machine programs in this monorepo are in directories nam
 ### De La Salle Santiago Zobel School
 
 - [Empowerment Technologies](./empowerment-technologies/)
+
+### De La Salle University
+
+- [Logic Formulation and Introductory Programming (CCPROG1)](./ccprog1/)

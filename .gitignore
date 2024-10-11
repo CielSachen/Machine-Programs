@@ -13,5 +13,9 @@ venv/
 # Python: Generated Program Results
 results.txt
 
+# CMake: Build Directories
+bin/
+build/
+
 # Miscellaneous
 **/.DS_Store

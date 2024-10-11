@@ -1,0 +1,11 @@
+add_library(tradinglib trading.c text_graphics.c console.c)
+target_include_directories(tradinglib PUBLIC ${HEADER_DIR})
+target_compile_options(tradinglib PRIVATE ${CC_FLAGS})
+target_compile_features(tradinglib PRIVATE ${C_STD})
+
+add_executable(ccprog1 main.c text_graphics.c prompts.c console.c)
+target_include_directories(ccprog1 PUBLIC ${HEADER_DIR})
+target_link_libraries(ccprog1 PUBLIC tradinglib)
+target_compile_options(ccprog1 PRIVATE ${CC_FLAGS})
+target_compile_features(ccprog1 PRIVATE ${C_STD})
+set_target_properties(ccprog1 PROPERTIES RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/../bin")

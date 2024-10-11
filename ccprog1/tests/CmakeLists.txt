@@ -1,0 +1,9 @@
+add_executable(ccprog1_tests trading.test.cpp)
+target_include_directories(ccprog1_tests PUBLIC ${HEADER_DIR})
+target_link_libraries(ccprog1_tests PUBLIC GTest::gtest_main PUBLIC tradinglib)
+target_compile_options(ccprog1_tests PRIVATE ${CC_FLAGS})
+target_compile_features(ccprog1_tests PRIVATE ${CXX_STD})
+
+include(GoogleTest)
+
+gtest_discover_tests(ccprog1_tests)

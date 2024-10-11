@@ -5,6 +5,7 @@
     "ms-python.debugpy",
     "ms-python.python",
     "ms-python.vscode-pylance",
+    "ms-vscode.cpptools-extension-pack",
     "njpwerner.autodocstring",
     "visualstudioexptteam.intellicode-api-usage-examples",
     "visualstudioexptteam.vscodeintellicode"
